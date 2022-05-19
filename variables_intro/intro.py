@@ -1,16 +1,12 @@
-a = 1
-b = 2
-c = 3.5
-d = "Hello!"
+a = 1 #int
+b = 2 #int
+c = 3.5 #float
+d = "Hello!" #str
 
-print(a)
-print(b)
-print(c)
-print(d)
 
 # Pythion is a dynamically typed language (we don't tell it what a variable type is)
 
-print(type(a))
-print(type(b))
-print(type(c))
-print(type(d))
+
+one_third = 1 / 3
+print(one_third)
+print(one_third * 3)
