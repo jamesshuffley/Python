@@ -19,3 +19,5 @@ print(hi.islower())  # T if all characters are lowercase
 print(hi.isupper())  # T is all characters are uppercase
 print(hi.endswith("!"))  # T if the string ends with the given char
 print(hi.startswith("H"))  # T if the string starts with the given char
+
+
