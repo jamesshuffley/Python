@@ -24,6 +24,6 @@ while play:
             print('Thank you for running the game')
             play = False
         else:
-            print("sorry that is not a valid response, please type yes or no\n")
+            print("Sorry that is not a valid response, please type yes or no\n")
 
 
