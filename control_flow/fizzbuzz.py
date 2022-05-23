@@ -4,7 +4,8 @@ fizz = 'james'
 buzz = 'shuffley'
 
 while play:
-    for i in range(101):
+    user_range = input("What number would you like the game to go up to?\n")
+    for i in range(int(user_range) + 1):
         if i % 3 == 0 and i % 5 == 0:
             print(f'{fizz}{buzz}')
             continue
@@ -25,5 +26,3 @@ while play:
             play = False
         else:
             print("Sorry that is not a valid response, please type yes or no\n")
-
-
