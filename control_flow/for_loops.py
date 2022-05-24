@@ -19,8 +19,8 @@ profile = {
     'height_cm': 177
 }
 
-#for x in profile:
-#    print(x)
+for x in profile:
+    print(x)
 
 for i in range(5):
     print(f"This is number: {i + 1}")
