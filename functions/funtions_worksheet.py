@@ -68,7 +68,7 @@ print("\nQ2b\n")
 def name_id(name):
     index = []
     new_string = None
-    for i in name:
+    for i in name.lower():
         ind = position(i)
         index.append(str(ind))
         new_string = "".join(index)
