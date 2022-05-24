@@ -50,22 +50,3 @@ print(total_cost(
     Burger=9.00,
     HotDog=9.20
 ))
-
-
-def fizzbuzz_line(num: int):
-    if num % 15 == 0:
-        return "FizzBuzz"
-    if num % 5 == 0:
-        return "Buzz"
-    if num % 3 == 0:
-        return "Fizz"
-    return str(num)
-
-
-def fizzbuzz_game():
-    for i in range(1, 101):
-        return fizzbuzz_line()
-
-
-print(fizzbuzz_game())
-

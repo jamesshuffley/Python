@@ -52,4 +52,3 @@ davids_car.accelerate(60)
 davids_car.brake(20)
 
 print(davids_car.current_speed)
-
