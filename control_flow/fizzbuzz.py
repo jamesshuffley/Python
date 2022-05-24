@@ -19,10 +19,11 @@ while play:
     answer = None
     while answer not in ("yes", "no"):
         answer = input("Do you want to run the game again, type yes or no\n")
-        if answer == "yes":
+        if answer.lower() in ("yes", "y"):
             break
-        elif answer == "no":
+        elif answer.lower() in ("no", "n"):
             print('Thank you for running the game')
             play = False
         else:
             print("Sorry that is not a valid response, please type yes or no\n")
+            
