@@ -1,0 +1,11 @@
+Please create the following:
+
+- A rectangle class
+- It should have a width and a height
+- Give it the methods: get_area() and get_perimeter()
+- Give it appropriate str and repr representations
+
+- A square class
+- It should have a length
+- It needs get_area() and get_perimeter() and
+    appropriate str and repr representations

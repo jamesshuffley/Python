@@ -6,4 +6,14 @@ Pillars of OOP
 
 3. Inheritance - parent classes and subclasses, creating another class to inherit the methods
 
-4. Polymorphism - meaning "many-shapes-ism" subclasses can look different from other subclasses as well as the parent 
+4. Polymorphism - meaning "many-shapes-ism" subclasses can look different from other subclasses as well as the parent
+
+
+SOLID Principles
+
+Single-responsibility (each class should have one job)
+Open-closed (open for extension, closed for modification
+Liskov Substitution (wherever you have an instance of the parent class, you should be able
+    to substitute the subclass)
+Interface Segregation (users should only use the methods they need to use, not those they don't nee to use)
+Dependency Inversion (high level modules should not depend on low level modules; both should depend on abstractions)
