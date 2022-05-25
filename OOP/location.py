@@ -12,9 +12,7 @@ class Location:
 
 bham_academy = Location(52.488647, -1.887249)
 
-
 print(f"The Birminghma Academy is located at {bham_academy}")
 
-
-class Dog:
-    def __init__(self, age):
+# class Dog:
+#     def __init__(self, age)

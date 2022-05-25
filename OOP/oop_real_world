@@ -1,0 +1,27 @@
+Smart Phone
+
+1. Abstraction - don't need to know how the OS works or how a text is sent or the camera functions
+    you just press apps, compile and press send and take pictures
+
+2. Encapsulation - what previously were different things are packaged into one:
+    music player, camera, calling, texting, video player, games console, web searcher
+
+3. Inheritance - new smart phones come out each year, with subtle to major differences but there are
+    always inherited features from the OS, to camera and text functionality
+
+4. Polymorphism - there are different smart phones ranging in functionality and OS. They have
+    similarities but also differences from each other as well as the overall class of 'smart phone'
+
+
+Medicine
+
+1. Abstraction - don't need to understand or know how the medicine works, you just take it
+
+2. Encapsulation - could literally be the tablet, injection or otherwise that physically holds the
+    medicine in, it could even hold different different types of medicine
+
+3. Inheritance - the refining and updating of drugs, possible even doses, could have inherited certain
+    features from previous medicine
+
+4. Polymorphism - lots of different forms of medicine to treat different things. there may be
+    similarities and differences between them and the overall class of 'medicine'
