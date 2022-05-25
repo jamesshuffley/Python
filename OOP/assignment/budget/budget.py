@@ -5,16 +5,27 @@ class Category:
         self.category = category
 
     def check_funds(self, amount):
+        """checks to see if the inputted amount is greater than the balance of the category
+        if it is, it false if not true, this can be used standalone but is also used later in the
+        withdrawal and transfer defs to check if the required action can take place (to prevent a minus balance)"""
         if self.__balance < amount:
             return False
         else:
             return True
 
     def deposit(self, amount, description=""):
-        self.record.append({"amount": amount, "description": description})
+        """firstly adds the amount to the category balance and then adds the amount and description
+        of the deposit (if inputted) to the record list which is used later in the __str__ formatting.
+        The default for the description is nothing meaning if nothing is inputted the description
+        will be blank"""
         self.__balance += amount
+        self.record.append({"amount": amount, "description": description})
 
     def withdraw(self, amount, description=""):
+        """firstly uses the check_funds def to ensure the withdrawal doesn't go into the minus. if true,
+        the amount is taken away from the balance and then the record is again updated with the amount
+        and description of the withdrawal (if inputted) to the record list which is used later
+        in the __str__ formatting"""
         if self.check_funds(amount):
             self.__balance -= amount
             self.record.append({"amount": -amount, "description": description})
@@ -23,9 +34,12 @@ class Category:
             return False
 
     def get_balance(self):
+        """the getter for the balance, formatted for easier reading"""
         return f"{self.category} balance is £{self.__balance}"
 
     def transfer(self, amount, category):
+        """checks to see if the transfer amount is greater than funds. if not, the amount it subtracted
+         and then added to the requested category, and this is added to the record list"""
         if self.check_funds(amount):
             self.__balance -= amount
             self.record.append({"amount": -amount, "description": "TRANSFER TO " + category.category})
@@ -36,6 +50,8 @@ class Category:
             return False
 
     def __str__(self):
+        """creates the formatted string for print(category_name). takes an empty result, gives it a heading
+        then for category it runs through the record, displaying each description and amount in a format"""
         result = ""
         result += f"--------- {self.category} ---------\n"
         for i in self.record:
