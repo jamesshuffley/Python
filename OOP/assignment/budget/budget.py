@@ -1,35 +1,35 @@
 class Category:
     def __init__(self, category):
         self.record = []
-        self.balance = 0
+        self.__balance = 0
         self.category = category
 
     def check_funds(self, amount):
-        if self.balance < amount:
+        if self.__balance < amount:
             return False
         else:
             return True
 
     def deposit(self, amount, description=""):
         self.record.append({"amount": amount, "description": description})
-        self.balance += amount
+        self.__balance += amount
 
     def withdraw(self, amount, description=""):
         if self.check_funds(amount):
-            self.balance -= amount
+            self.__balance -= amount
             self.record.append({"amount": -amount, "description": description})
             return True
         else:
             return False
 
     def get_balance(self):
-        return f"£{self.balance}"
+        return f"{self.category} balance is £{self.__balance}"
 
     def transfer(self, amount, category):
         if self.check_funds(amount):
-            self.balance -= amount
+            self.__balance -= amount
             self.record.append({"amount": -amount, "description": "TRANSFER TO " + category.category})
-            category.balance += amount
+            category.__balance += amount
             category.record.append({"amount": amount, "description": "TRANSFER FROM " + self.category})
             return True
         else:
@@ -52,7 +52,7 @@ class Category:
             if len(amount) > 8:
                 amount = amount[:8]
             result += description + str(amount).rjust(35 - len(description)) + "\n"
-        result += f"Total: £{format(float(self.balance), '.2f')} \n"
+        result += f"Total: £{format(float(self.__balance), '.2f')} \n"
         return result
 
 
@@ -70,15 +70,12 @@ if __name__ == "__main__":
     entertainment = Category("Entertainment")
     entertainment.deposit(150, "deposit")
     entertainment.withdraw(30, "bowling with friends")
-    entertainment.deposit(50, "birthday money")
+    entertainment.deposit(50, "money from birthday")
 
     print(food)
     print(clothing)
     print(entertainment)
 
     print(food.get_balance())
+    print(clothing.get_balance())
     print(food.check_funds(200))
-
-
-
-
