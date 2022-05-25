@@ -30,10 +30,10 @@ class Square(Rectangle):
 
 rectangle = Rectangle(4, 2)
 print(rectangle)
-print(f"The rectangle has an area of {rectangle.get_area()} cm squared")
-print(f"The rectangle has a perimeter of {rectangle.get_perimeter()} cm")
+print(f"The rectangle has an area of {rectangle.get_area()}cm squared")
+print(f"The rectangle has a perimeter of {rectangle.get_perimeter()}cm")
 
 square = Square(2)
 print(square)
-print(f"The square has an area of {square.get_area()} cm squared")
-print(f"The square has a perimeter of {square.get_perimeter()} cm")
+print(f"The square has an area of {square.get_area()}cm squared")
+print(f"The square has a perimeter of {square.get_perimeter()}cm")
