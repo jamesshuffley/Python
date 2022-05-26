@@ -1,0 +1,12 @@
+Pizza
+Pasta
+Lasagna
+Meatballs
+CarbonaraNew string to write
+New string to write
+New string to write
+
+ ['red', 'yellow', 'green']
+
+ ['red', 'yellow', 'green']
+redyellowgreenredyellowgreen
