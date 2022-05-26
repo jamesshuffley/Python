@@ -7,7 +7,7 @@ class Rectangle:
         return self.width * self.height
 
     def get_perimeter(self):
-        return (2 * self.width) + (2 * self.height)
+        return 2 * (self.width + self.height)
 
     def __repr__(self):
         return f"{__class__.__name__}(width={self.width}, height={self.height})"
