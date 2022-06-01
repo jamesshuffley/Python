@@ -1,0 +1,17 @@
+HyperText Transfer Protocol
+
+HTTP Request
+    VERB - IRL - Version
+    Header - Key-Value pairs
+    Body - Text, JSON, XML
+HTTP Response
+    Response Code - Version
+    Header
+    Body
+
+HTTP Verbs
+    GET - Reading
+    POST - Creating / Inserting
+    PUT - Updating / Replacing
+    PATCH - Modifying
+    DELETE - Delete
